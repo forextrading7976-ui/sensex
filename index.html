@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GUJARATI TRADER</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -12,80 +18,23 @@
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
-t.src='https://connect.facebook.net/en_US/fbevents.js';
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s);
-}(window,document,'script');
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}
+(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','1070388341983199');
-fbq('track','PageView');
+fbq('init', '1070388341983199');
+fbq('track', 'PageView');
 
-function joinNow(){
+function joinTelegram(){
     fbq('track','Subscribe');
+
     setTimeout(function(){
         window.location.href="https://t.me/+Odskkp8IQxFhYzNl";
     },300);
 }
 </script>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:#fff;
-text-align:center;
-}
-.container{
-max-width:420px;
-margin:auto;
-padding:30px 20px;
-}
-.logo{
-width:110px;
-height:110px;
-border-radius:50%;
-border:3px solid #facc15;
-margin-bottom:15px;
-}
-h1{
-font-size:32px;
-color:#facc15;
-margin-bottom:10px;
-}
-.tag{
-font-size:18px;
-margin-bottom:25px;
-}
-.card{
-background:#1e293b;
-padding:18px;
-border-radius:12px;
-margin-bottom:20px;
-}
-.card p{
-margin:10px 0;
-}
-.btn{
-width:100%;
-padding:16px;
-font-size:20px;
-background:#facc15;
-color:#000;
-border:none;
-border-radius:10px;
-font-weight:bold;
-cursor:pointer;
-}
-.btn:hover{
-background:#fde047;
-}
-.footer{
-margin-top:30px;
-font-size:14px;
-color:#bbb;
-}
-</style>
 </head>
 
 <body>
@@ -96,26 +45,50 @@ color:#bbb;
 
 <h1>GUJARATI TRADER</h1>
 
-<p class="tag">
-📈 Trusted Telegram Channel for Stock Market Traders
+<p class="subtitle">
+Trusted Stock Market Community
 </p>
 
-<div class="card">
-<p>✅ Free Intraday Calls</p>
-<p>✅ Swing Trading Tips</p>
-<p>✅ Daily Market Analysis</p>
-<p>✅ Risk Management</p>
+<div class="members">
+👥 Active Members
+<h2>12,510+</h2>
 </div>
 
-<button class="btn" onclick="joinNow()">
-🚀 JOIN FREE TELEGRAM
+<button onclick="joinTelegram()">
+🚀 Join on Telegram
 </button>
 
-<div class="footer">
-© 2026 GUJARATI TRADER
+<div class="cards">
+
+<div class="card">
+📈
+<h3>Market Insights</h3>
+<p>Daily Stock Market Analysis</p>
+</div>
+
+<div class="card">
+🎓
+<h3>Learn with Experts</h3>
+<p>Professional Trading Education</p>
+</div>
+
+<div class="card">
+💹
+<h3>Practical Strategies</h3>
+<p>Real Trading Setups</p>
 </div>
 
 </div>
+
+<footer>
+© 2026 GUJARATI TRADER
+</footer>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
+ 
+
