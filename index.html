@@ -253,12 +253,20 @@ src="https://www.facebook.com/tr?id=2184706892378188&ev=PageView&noscript=1"
     </div>
 
     <div class="telegram-btn">
-        <a href="https://t.me/+MMuRsDDduewyNmRl" 
-            target="_blank"
-            onclick="fbq('track', 'Subscribe');">
-           🚀 Join on Telegram
-            <div class="plus">+</div>
-        </a>
+      <a href="#" onclick="trackTelegramJoin(); return false;">
+    🚀 Join on Telegram
+    <div class="plus">+</div>
+</a>
+
+<script>
+function trackTelegramJoin() {
+    fbq('track', 'Subscribe');
+
+    setTimeout(function () {
+        window.open('https://t.me/+MMuRsDDduewyNmR1', '_blank');
+    }, 500);
+}
+</script>
     </div>
 
     <div class="features">
